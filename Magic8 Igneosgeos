@@ -1,0 +1,57 @@
+import java.util.*;
+
+import static java.lang.System.out;
+
+public class Magic8 {
+    //this program generates a response based on a random number
+
+    public static void main(String[] args) {
+        // first a random double is created between 0 and 1
+        double rand1 = Math.random();
+        //the random number is multiplied by 100 and divided by 10 to bring it out between 0 and 10
+        double roundRand1 = (Math.round(rand1*100.0)/10.0);
+        //the Math.floor rounds it down to the nearest integer
+        double magicRand = (Math.floor(roundRand1));
+        // random double is then converted to integer
+        int magicRand2 = (int)magicRand;
+
+// I use a switch statement to generate the 'advice'
+        switch (magicRand2) {
+            case 1:
+                out.println("Yes!");
+                break;
+            case 2:
+                out.println("No!");
+                break;
+            case 3:
+                out.println("Maybe!");
+                break;
+            case 4:
+                out.println("Maybe not!");
+                break;
+            case 5:
+                out.println("Banana!");
+                break;
+            case 6:
+                out.println("Could be!");
+                break;
+            case 7:
+                out.println("I'll think about it!");
+                break;
+            case 8:
+                out.println("Definitely!");
+                break;
+            case 9:
+                out.println("Shit hot!");
+                break;
+            default:
+                out.println("Try again!");
+        }
+
+
+
+
+
+
+        }
+}
