@@ -1,0 +1,59 @@
+import java.util.*;
+
+import static java.lang.System.out;
+
+public class Magic8 {
+    //this program generates a response based on a random number
+    /* this modification to the code generates an integer with fewer steps than the initial code on Saturday. I
+    worked hard to make this improvement. It was a head scratcher!  */
+    public static void main(String[] args) {
+        // first a random double is created between 0 and 1
+        double rand1 = Math.random();
+        //then the random number is multiplied by 10
+        double roundRand2 = (rand1*10.0);
+        //the Math.floor rounds it down to the nearest integer
+        double magicRand3 = (Math.floor(roundRand2));
+        // random double is then converted to integer
+        int rw2 = (int)magicRand3;
+        
+// I use a switch statement to generate the 'advice'
+        switch (rw2) {
+            case 1:
+                out.println("Yes!");
+                break;
+            case 2:
+                out.println("No!");
+                break;
+            case 3:
+                out.println("Maybe!");
+                break;
+            case 4:
+                out.println("Maybe not!");
+                break;
+            case 5:
+                out.println("Banana!");
+                break;
+            case 6:
+                out.println("Could be!");
+                break;
+            case 7:
+                out.println("I'll think about it!");
+                break;
+            case 8:
+                out.println("Definitely!");
+                break;
+            case 9:
+                // I changed this one to avoid swearing
+                out.println("Sugar hot!");
+                break;
+            default:
+                out.println("Try again!");
+        }
+
+
+
+
+
+
+        }
+}
